@@ -1,0 +1,42 @@
+.titulo-principal{
+    margin-bottom: 20px; 
+    color: fuchsia;
+}
+.destaque{
+    color: darkblue; 
+    background-color: lightpink;
+}
+#especial{
+    font-style: italic; 
+    border-left: 3px solid plum; 
+    padding-left: 5px;
+}
+.paragrafo-comum{
+    line-height: 1.6;
+}
+.bloco-um{
+    p{
+        background-color: lightskyblue;
+    }
+    .titulo-bloco{
+        border-bottom: 2px solid lightskyblue;
+    }
+}
+.bloco-dois{
+    p{padding: 10px;}
+
+    .titulo-bloco{
+        font-family: Arial, sans-serif;
+    }
+}
+.lista-itens{
+    .item{
+        margin-bottom: 5px;
+    }
+    .item destaque{
+        background-color: lightblue;
+    }
+    .item{
+        color: darkblue;
+    }
+}

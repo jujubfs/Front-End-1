@@ -1,14 +1,14 @@
 .titulo-principal{
     margin-bottom: 20px; 
-    color: fuchsia;
+    color: orangered;
 }
 .destaque{
-    color: darkblue; 
-    background-color: lightpink;
+    color: rgba(212, 75, 11, 0.829); 
+    background-color: rgb(247, 209, 140)
 }
 #especial{
     font-style: italic; 
-    border-left: 3px solid plum; 
+    border-left: 3px solid rgb(247, 209, 140); 
     padding-left: 5px;
 }
 .paragrafo-comum{
@@ -16,10 +16,10 @@
 }
 .bloco-um{
     p{
-        background-color: lightskyblue;
+        background-color: rgb(241, 151, 16);
     }
     .titulo-bloco{
-        border-bottom: 2px solid lightskyblue;
+        border-bottom: 2px solid rgb(241, 151, 16);
     }
 }
 .bloco-dois{
@@ -34,9 +34,9 @@
         margin-bottom: 5px;
     }
     .item destaque{
-        background-color: lightblue;
+        background-color: lightcoral;
     }
     .ultimo-item{
-        color: darkblue;
+        color: darkred;
     }
 }

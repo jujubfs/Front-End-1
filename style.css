@@ -1,6 +1,32 @@
-h1{
-    color: rgb(235, 106, 106);
+body {
+    background-color: lightpink;
+    font-family: monospace;
 }
-li{
-    color: rgba(238, 85, 14, 0.719);
+
+h1 {
+    color:rgb(255, 255, 255);
+}
+
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+section {
+    color:rgb(255, 255, 255);
+}
+
+a {
+    color: rgb(255, 174, 0);
+    text-decoration: none;
+}
+
+img {
+height: 500px}
+
+h1 {
+    background-color: rgba(103, 102, 201, 0.603);
+}
+li {
+    color: rgb(255, 255, 255);
 }

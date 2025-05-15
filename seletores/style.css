@@ -1,0 +1,42 @@
+.titulo-principal{
+    margin-bottom: 20px; 
+    color: rgb(9, 128, 4);
+}
+.destaque{
+    color: rgba(56, 175, 20, 0.829); 
+    background-color: rgb(121, 250, 121);
+}
+#especial{
+    font-style: italic; 
+    border-left: 3px solid rgb(121, 250, 121); 
+    padding-left: 5px;
+}
+.paragrafo-comum{
+    line-height: 1.6;
+}
+.bloco-um{
+    p{
+        background-color: rgb(40, 100, 6);
+    }
+    .titulo-bloco{
+        border-bottom: 2px solid rgba(15, 121, 11, 0.692);
+    }
+}
+.bloco-dois{
+    p{padding: 10px;}
+
+    .titulo-bloco{
+        font-family: Arial, sans-serif;
+    }
+}
+.lista-itens{
+    .item{
+        margin-bottom: 5px;
+    }
+    .item destaque{
+        background-color: rgba(24, 206, 24, 0.842);
+    }
+    .ultimo-item{
+        color: darkgreen;
+    }
+}

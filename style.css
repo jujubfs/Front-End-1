@@ -1,32 +1,38 @@
-body {
-    background-color: lightpink;
-    font-family: monospace;
+body{
+    background-color: rgb(30, 47, 139);
+}
+
+.titulo{
+    color:  rgb(59, 123, 241);
 }
 
 h1 {
-    color: red;
+    background-color: rgb(37, 34, 212);
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-
-h2 {
-    color: red;
+header {
+    background-color: rgb(29, 147, 226);
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
 }
 
-section {
-    color: whitesmoke;
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-content: center;
 }
 
-a {
-    color: Red;
+header nav ul li a {
     text-decoration: none;
-}
-
-img {
-height: 500px}
-
-h1 {
-    background-color: rgb(255, 158, 172);
-}
-li {
-    color: rgb(255, 255, 255);
+    color: rgb(26, 72, 141);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }

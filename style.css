@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(30, 47, 139);
+    background-color: #3460ee;
 }
 
 .titulo{
@@ -7,17 +7,22 @@ body{
 }
 
 h1 {
-    background-color: rgb(37, 34, 212);
+    background-color: #000e98;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 header {
-    background-color: rgb(29, 147, 226);
+    background-color: #2b95e5;
     position: sticky;
     top: 0;
     border-radius: 10px;
+    max-width: 600px;       /* Reduz a largura da caixa */
+    margin: 20px auto;      /* Centraliza e adiciona espaço acima/abaixo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border: 1px solid #1a4e8a; /* Borda fina azul escura */
+    padding-bottom: 10px; 
 }
 
 header nav ul {
@@ -26,6 +31,7 @@ header nav ul {
     gap: 1.5rem;
     padding: 1rem;
     justify-content: center;
+    flex-wrap: wrap; 
 }
 
 header nav ul li a {
@@ -35,4 +41,46 @@ header nav ul li a {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    background-color: #145ec9;
+    color: white;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-mim {
+    background-color: #2b95e5;
+    max-width: 400px;
+    height: 50px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.sobre-mim h2 {
+    text-align: center;
+    color: rgb(26, 72, 141);
+    margin-bottom: 15px;
+}
+
+.paragrafo-livre {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #222;
 }

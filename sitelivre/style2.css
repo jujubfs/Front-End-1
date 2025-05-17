@@ -3,14 +3,14 @@ body{
 }
 
 .titulo{
-    color: rgba(57, 182, 26, 0.541);
+    color: #c0c0c0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: center;
 }
 
 
-h1 {background-color: rgba(22, 82, 7, 0.733);
+h1 {background-color: #327d25;
 }
 
 
@@ -23,13 +23,8 @@ img{
     height: 300px;
 }
 
-a{
-    color: rgb(13, 145, 13);
-    text-decoration: none;
-}
-
 header {
-    background-color: rgba(14, 153, 44, 0.705);
+    background-color: #2e7d22;
     position: sticky;
     top: 0;
     border-radius: 10px;
@@ -45,8 +40,88 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color:  rgb(172, 171, 168);;
+    color:  #c0c0c0;
     font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;}
+
+.imagem-legenda {
+    display: flex;              /* Coloca a imagem e o texto lado a lado */
+    align-items: flex-start;    /* Alinha os itens ao topo (padrão mais comum em textos longos) */
+    gap: 20px;                  /* Espaçamento entre a imagem e o texto */
+    margin: 20px;               /* Espaçamento externo do bloco */
+}
+
+.imagem-legenda img {
+    width: 250px;               /* Largura da imagem (ajuste conforme necessário) */
+    height: auto;               /* Mantém a proporção original */
+    border-radius: 8px;         /* Cantos arredondados, opcional */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra leve, opcional */
+}
+
+.imagem-legenda p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;                /* Cor do texto */
+    max-width: 600px;           /* Limita a largura do texto para não ficar muito espalhado */
+}
+
+.ficha-personagem {
+    background-color: #3ec032d3;        /* Cor de fundo suave */
+    border: 1px solid #ccc;           /* Borda cinza clara */
+    border-radius: 10px;              /* Cantos arredondados */
+    padding: 20px;                    /* Espaço interno */
+    margin: 30px auto;                /* Espaço externo + centralização */
+    max-width: 800px;                 /* Largura máxima da ficha */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
+    font-family: Arial, sans-serif;  /* Fonte mais legível */
+}
+
+.ficha-personagem h3 {
+    font-size: 16px;
+    color: #222;
+    line-height: 1.6;
+}
+
+.ficha-personagem strong {
+    color: #0a4f3c;  /* Verde escuro para os títulos da ficha */
+}
+
+.header-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #338d26;
+    border-radius: #0c4e09;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header-container nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-container nav ul li a {
+    text-decoration: none;
+    color: #0c1f09;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.header-container nav ul li a:hover {
+    background-color: #6abf59;
+}
+
+.header-container .titulo {
+    margin-top: 10px;
+    font-size: 28px;
+    color: #0c1f09;
+}

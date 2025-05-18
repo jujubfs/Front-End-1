@@ -110,7 +110,12 @@ header nav ul li a {
     font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.2s ease;}
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #6abf59;
+}
 
 .header-container {
     max-width: 600px;

@@ -1,9 +1,10 @@
-body{
+body {
     background-color: #3460ee;
+    font-family: Arial, sans-serif;
 }
 
-.titulo{
-    color:  rgb(59, 123, 241);
+.titulo {
+    color: rgb(59, 123, 241);
 }
 
 h1 {
@@ -11,6 +12,8 @@ h1 {
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 10px 0;
+    font-size: 1.8rem;
 }
 
 header {
@@ -18,69 +21,104 @@ header {
     position: sticky;
     top: 0;
     border-radius: 10px;
-    max-width: 600px;       /* Reduz a largura da caixa */
-    margin: 20px auto;      /* Centraliza e adiciona espaço acima/abaixo */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    border: 1px solid #1a4e8a; /* Borda fina azul escura */
-    padding-bottom: 10px; 
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #1a4e8a;
+    padding-bottom: 5px;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
-    padding: 1rem;
+    gap: 1rem;
+    padding: 0.5rem;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: 0;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: rgb(26, 72, 141);
     font-weight: 600;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 header nav ul li a:hover {
     background-color: #145ec9;
     color: white;
-    transform: translateY(-2px); 
+    transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.sobre-mim {
+/* SEÇÕES AJUSTADAS */
+
+section,
+.paragrafo-livre,
+.meus-projetos,
+.onde-encontrar {
     background-color: #2b95e5;
-    max-width: 400px;
-    height: 50px;
+    max-width: 600px;
     margin: 30px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
     color: #222;
     line-height: 1.6;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
     text-align: center;
 }
 
-.sobre-mim h2 {
-    text-align: center;
+/* TÍTULOS DAS SEÇÕES */
+section h2,
+.meus-projetos h2,
+.onde-encontrar h2 {
     color: rgb(26, 72, 141);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
+/* PARÁGRAFO LIVRE */
 .paragrafo-livre {
     background: none;
     border: none;
     padding: 0;
-    margin: 20px auto;
-    max-width: 800px;
     font-size: 1.1rem;
-    line-height: 1.6;
-    color: #222;
 }
+
+/* LISTA DE LINKS EM "ONDE ME ENCONTRAR" */
+.onde-encontrar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.onde-encontrar li {
+    margin-bottom: 10px;
+}
+
+.onde-encontrar a {
+    color: rgb(26, 72, 141);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.onde-encontrar a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #1a4e8a;
+    color: white;
+    font-size: 0.9rem;
+}
+
+

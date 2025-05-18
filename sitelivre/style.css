@@ -114,9 +114,55 @@ header nav ul li a {
 
 .brasao-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
     margin: 20px;
 }
+
+.imagem-legenda {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 250px; 
+}
+
+.imagem-legenda img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.caixa-sonserina {
+    background-color: #1e4f2b;
+    color: #e0e0e0;
+    max-width: 500px;
+    padding: 20px;
+    border-left: 8px solid #2ecc71;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.caixa-sonserina h2 {
+    margin-bottom: 15px;
+    color: #a2f5a2;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.caixa-sonserina ul {
+    list-style: none;
+    padding: 0;
+}
+
+.caixa-sonserina li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.caixa-sonserina strong {
+    color: #93ff93;
+}
+

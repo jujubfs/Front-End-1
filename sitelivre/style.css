@@ -1,16 +1,23 @@
 body{
     background-color: rgba(36, 100, 23, 0.699);
+    padding: 20px;
 }
 
 .titulo{
-    color: rgba(57, 182, 26, 0.541);
+    color: #c0c0c0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: center;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-h1 {background-color: rgba(22, 82, 7, 0.733);
+h1 {
+    background-color: #327d25;
 }
 
 
@@ -23,13 +30,8 @@ img{
     height: 300px;
 }
 
-a{
-    color: rgb(13, 145, 13);
-    text-decoration: none;
-}
-
 header {
-    background-color: rgba(14, 153, 44, 0.705);
+    background-color: #2e7d22;
     position: sticky;
     top: 0;
     border-radius: 10px;
@@ -45,8 +47,76 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color:  rgb(172, 171, 168);;
+    color:  #c0c0c0;
     font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;}
+
+.imagem-legenda {
+    display: flex;           
+    align-items: flex-start;   
+    gap: 20px;               
+    margin: 20px;               
+}
+
+.imagem-legenda img {
+    width: 250px;             
+    height: auto;
+    border-radius: 8px;         
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.imagem-legenda p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;             
+    max-width: 600px;         
+}
+
+.header-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #338d26;
+    border-radius: #0c4e09;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header-container nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-container nav ul li a {
+    text-decoration: none;
+    color: #0c1f09;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.header-container nav ul li a:hover {
+    background-color: #6abf59;
+}
+
+.header-container .titulo {
+    margin-top: 10px;
+    font-size: 28px;
+    color: #0c1f09;
+}
+
+.brasao-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}

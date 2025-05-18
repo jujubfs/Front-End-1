@@ -1,26 +1,21 @@
-body{
+body {
     background-color: rgba(36, 100, 23, 0.699);
+    padding: 20px;
 }
 
 .titulo{
-    color: rgba(57, 182, 26, 0.541);
+    color: #c0c0c0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: center;
 }
 
-
-h1 {background-color: rgba(22, 82, 7, 0.733);
+h1 {
+    background-color: #327d25;
 }
-
 
 section {
     color: rgba(0, 0, 0, 0.514);
-}
-
-
-img{
-    height: 300px;
 }
 
 a{
@@ -28,8 +23,74 @@ a{
     text-decoration: none;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
-    background-color: rgba(14, 153, 44, 0.705);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.personagem {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.personagem img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.descricao {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.descricao h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.descricao p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .personagem {
+    flex-direction: column;
+    text-align: center;
+}
+
+.personagem img {
+    width: 100%;
+}
+
+.descricao {
+    padding: 15px;
+}}
+
+header {
+    background-color: #2e7d22;
     position: sticky;
     top: 0;
     border-radius: 10px;
@@ -45,8 +106,46 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color:  rgb(172, 171, 168);;
+    color:  #c0c0c0;
     font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;}
+
+.header-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #338d26;
+    border-radius: #0c4e09;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header-container nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-container nav ul li a {
+    text-decoration: none;
+    color: #0c1f09;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.header-container nav ul li a:hover {
+    background-color: #6abf59;
+}
+
+.header-container .titulo {
+    margin-top: 10px;
+    font-size: 28px;
+    color: #0c1f09;
+}

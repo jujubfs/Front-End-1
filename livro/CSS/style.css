@@ -40,3 +40,36 @@ p {
 span {
     font-weight: bold;
 }
+
+header {
+    background-color: #2e7d22;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-content: center;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #0c1f09;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #6abf59;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

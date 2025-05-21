@@ -33,14 +33,16 @@ p {
 
 .COMPRAR {
     background-color: green;
+    color: white;
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding: 8px 20px;
+    border-radius: 50px;
     display: inline-block;
-    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
 }
 
 span {
@@ -78,20 +80,6 @@ header nav ul li a:hover {
     background-color: #6abf59;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.btn {
-    background-color: green;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 8px 20px;
-    border-radius: 50px;
-    display: inline-block;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease;
 }
 
 .btn:hover {

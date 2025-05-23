@@ -31,20 +31,6 @@ p {
     line-height: 28px;
 }
 
-.COMPRAR {
-    background-color: green;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 8px 20px;
-    border-radius: 50px;
-    display: inline-block;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease;
-}
-
 span {
     font-weight: bold;
 }
@@ -80,6 +66,19 @@ header nav ul li a:hover {
     background-color: #6abf59;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.btn {
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
 }
 
 .btn:hover {

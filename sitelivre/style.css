@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgba(36, 100, 23, 0.699);
     padding: 20px;
@@ -10,16 +16,9 @@ body{
     text-align: center;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 h1 {
     background-color: #327d25;
 }
-
 
 section {
     color: rgba(0, 0, 0, 0.514);
@@ -165,4 +164,3 @@ header nav ul li a {
 .caixa-sonserina strong {
     color: #93ff93;
 }
-

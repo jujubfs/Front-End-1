@@ -1,0 +1,16 @@
+:root {
+    --corFundo: #e66ce6e1;
+    --tamanhoLink: 1.5rem;
+}
+
+
+body {
+    background-color: var(--corFundo);
+    
+}
+
+a {
+    font-size: var(--tamanhoLink);
+    text-decoration: none;
+    color: #fff;
+}

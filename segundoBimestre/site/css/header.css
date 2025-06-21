@@ -8,18 +8,18 @@
 }
 
 header {
-    background-color: rgb(194, 110, 0);
+    background-color: #EADDC7;
     height: 100px;
 }
 
 a {
     font-size: var(--tamanhoLink);
     text-decoration: none;
-    color: #fff;
+    color: #4E3F5D;
 }
 
 a:hover {
-    color: rgb(91, 52, 1);
+    color: #7A9E9F;
 }
 
 @media screen and (min-width: 601px) {

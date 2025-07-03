@@ -20,26 +20,26 @@ footer {
     display: none;
 }
 
-@media screen and (orientation: landscape) { /* Regra para janelas paisagem */
+@media screen and (orientation: landscape) { 
     .paisagem {
         display: block;
     }
 }
 
-@media screen and (orientation: portrait) { /* Regra para janelas retrato */
+@media screen and (orientation: portrait) { 
     .retrato {
         display: block;
     }
 }
 
-@media screen and (min-width:601px) { /* Regra para janelas com mais de 600px */
+@media screen and (min-width:601px) { 
     main {
         min-height: calc(100vh - 16px - 100px);
     }
 }
 
 
-@media screen and (max-width:600px) { /* Regra para janelas com 600px ou menos */
+@media screen and (max-width:600px) { 
 
     main,
     footer {
@@ -48,5 +48,67 @@ footer {
 
     main {
         min-height: calc(100vh - 16px);
+    }
+}
+
+
+
+
+
+
+
+.ulMenu {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #EADDC7;
+    height: 100px;
+}
+
+a {
+    font-size: var(--tamanhoLink);
+    text-decoration: none;
+    color: #4E3F5D;
+}
+
+a:hover {
+    color: #7A9E9F;
+}
+
+@media screen and (min-width: 601px) {
+    .imgMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header {
+        position: fixed;
+        width: 100px;
+        height: 100vh;
+    }
+
+    a {
+        font-size: var(--tamanhoLinkMobile);
+    }
+
+    .imgMobile {
+        display: inline;
+        width: 80px;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+    }
+}
+
+@media print {
+    header {
+        display: none;
     }
 }

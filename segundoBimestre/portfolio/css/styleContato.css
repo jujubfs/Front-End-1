@@ -89,6 +89,7 @@ textarea {
     background-color: #fff;
     color: #560F20;
     resize: vertical;
+    font-family: 'Quicksand', sans-serif;
 }
 
 input::placeholder,
@@ -169,7 +170,7 @@ footer p {
 
 /* ---------- Responsividade ---------- */
 
-/* Para telas pequenas: até 400px */
+/* Para telas pequenas: até 00px */
 @media (max-width: 400px) {
     nav ul {
         flex-direction: column;

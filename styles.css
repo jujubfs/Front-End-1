@@ -1,0 +1,87 @@
+/* ---------- Estilo Base ---------- */
+body {
+margin: 0;
+padding: 0;
+background-color: #fdf1f4; /* fundo rosinha suave */
+font-family: 'Quicksand', sans-serif;
+color: #560F20;
+}
+
+/* ---------- Navegação ---------- */
+header {
+  background-color: #f8d7e2; /* rosa pastel */
+padding: 20px 0;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 30px;
+padding: 0;
+margin: 0;
+flex-wrap: wrap;
+}
+
+nav li {
+font-size: 1.3em;
+font-family: 'Dancing Script', cursive;
+}
+
+nav a {
+text-decoration: none;
+color: #a94c68;
+padding: 10px 20px;
+border-radius: 15px;
+background-color: #ffffff;
+border: 2px solid #f3b8c8;
+transition: all 0.3s ease;
+display: inline-block;
+}
+
+nav a:hover {
+background-color: #ffe2ec;
+color: #791127;
+transform: scale(1.05);
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Mensagem de Boas-Vindas ---------- */
+main {
+padding: 40px 20px;
+display: flex;
+justify-content: center;
+}
+
+.boas-vindas {
+background-color: #ecd8e0; /* rosa clarinho */
+border: 2px solid #c75c71;
+border-radius: 20px;
+padding: 30px;
+max-width: 700px;
+text-align: center;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.boas-vindas h1 {
+font-family: 'Dancing Script', cursive;
+font-size: 2.2em;
+color: #791127;
+margin-bottom: 20px;
+}
+
+.boas-vindas p {
+font-size: 1.3em;
+line-height: 1.8;
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+background-color: #f8d7e2;
+color: #560F20;
+text-align: center;
+padding: 20px 0;
+font-family: 'Great Vibes', cursive;
+font-size: 1.3em;
+}

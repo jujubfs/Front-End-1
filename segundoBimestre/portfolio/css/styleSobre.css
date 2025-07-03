@@ -1,0 +1,166 @@
+/* ---------- Reset e Base ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fdf1f4;
+    /* rosinha claro */
+    color: #560F20;
+    /* vinho escuro */
+    line-height: 1.7;
+}
+
+/* ---------- Navegação ---------- */
+header {
+    background-color: #f8d7e2;
+    /* rosa pastel */
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+nav ul.ulMenu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav ul.ulMenu li {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+}
+
+nav ul.ulMenu a {
+    text-decoration: none;
+    color: #791127;
+    background-color: #fff;
+    padding: 10px 18px;
+    border: 2px solid #f3b8c8;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+nav ul.ulMenu a:hover {
+    background-color: #ffe2ec;
+    color: #560F20;
+    transform: scale(1.05);
+}
+
+/* ---------- Conteúdo Principal ---------- */
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    background-color: #ecd8e0;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+section.sobre-mim {
+    padding: 40px 30px;
+}
+
+section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    color: #560F20;
+    text-align: center;
+}
+
+.paragrafo-livre {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #560F20;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+strong {
+    color: #791127;
+}
+
+em {
+    color: #671c18;
+    font-style: italic;
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+    background-color: #f8d7e2;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 60px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #791127;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+footer ul li a:hover {
+    color: #560F20;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    color: #560F20;
+    font-size: 1.1em;
+}
+
+/* ---------- Responsividade ---------- */
+@media (max-width: 400px) {
+    nav ul.ulMenu {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    nav ul.ulMenu li {
+        font-size: 1.3em;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul.ulMenu li a {
+        width: 80%;
+        text-align: center;
+    }
+
+    main {
+        margin: 20px 15px;
+    }
+
+    section.sobre-mim {
+        padding: 25px 20px;
+    }
+
+    section.sobre-mim h2 {
+        font-size: 2em;
+    }
+
+    .paragrafo-livre {
+        font-size: 1em;
+    }
+}

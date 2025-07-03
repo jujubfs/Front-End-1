@@ -1,0 +1,225 @@
+/* ---------- Estilo Base ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fdf1f4;
+    /* rosinha claro */
+    color: #560F20;
+    /* vinho escuro para contraste suave */
+}
+
+/* ---------- Navegação ---------- */
+header {
+    background-color: #f8d7e2;
+    /* rosa pastel */
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+nav ul.ulMenu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav ul.ulMenu li {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+}
+
+nav ul.ulMenu a {
+    text-decoration: none;
+    color: #791127;
+    background-color: #fff;
+    padding: 10px 18px;
+    border: 2px solid #f3b8c8;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+nav ul.ulMenu a:hover {
+    background-color: #ffe2ec;
+    color: #560F20;
+    transform: scale(1.05);
+}
+
+/* ---------- Formulário ---------- */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+form.form-feedback {
+    background-color: #ecd8e0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #560F20;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    border: 2px solid #c75c71;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #fff;
+    color: #560F20;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a77b88;
+}
+
+.form-action {
+    text-align: center;
+}
+
+/* Estilização para o botão de envio */
+button[type="submit"] {
+    background-color: #c75c71;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+button[type="submit"]:hover {
+    background-color: #791127;
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+    background-color: #f8d7e2;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 1em;
+    margin-top: 40px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #791127;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+footer ul li a:hover {
+    color: #560F20;
+}
+
+footer a {
+    text-decoration: none;
+    color: #791127;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #560F20;
+}
+
+footer p {
+    margin: 0;
+    color: #560F20;
+    font-size: 1.1em;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* ---------- Responsividade ---------- */
+
+/* Para telas pequenas: até 400px */
+@media (max-width: 400px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    nav li {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    form.form-feedback {
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 1.2em;
+    }
+}
+
+/* Para telas muito pequenas: até 320px */
+@media (max-width: 320px) {
+    nav a {
+        padding: 8px 12px;
+        font-size: 1em;
+    }
+
+    nav li {
+        font-size: 1em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.9em;
+    }
+
+    button[type="submit"] {
+        font-size: 1em;
+    }
+}

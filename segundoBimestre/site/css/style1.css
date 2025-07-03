@@ -1,0 +1,229 @@
+/*Livro 1*/
+/* ---------- Estilo Base ---------- */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfb89f; /* color5 */
+    color: #612335; /* color3 */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ---------- Header e Navegação ---------- */
+header {
+    background-color: #a93e5e; /* color1 */
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1em;
+}
+
+nav a:hover {
+    color: #f785bf; /* color2 */
+}
+
+/* ---------- Main Flex Layout ---------- */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* ---------- Seções ---------- */
+main section {
+    background-color: #ffffff;
+    border-left: 10px solid #947252;
+    border: 2px solid #947252;
+    margin: 15px 0;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ---------- Títulos e Textos ---------- */
+h1 {
+    color: #a93e5e;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #612335;
+}
+
+strong {
+    color: #a93e5e;
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+    background-color: #a93e5e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.3em;
+}
+
+/* ---------- Imagem do Livro (isolada) ---------- */
+.livro-imagem1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f785bf;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border: 3px solid #a93e5e;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.livro-imagem1 img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #612335;
+}
+
+/* ---------- IMAGEM + TEXTO lado a lado ---------- */
+.linha-inicial1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+/* ---------- Caixa da imagem (alinhada) ---------- */
+.livro-imagem1 {
+    background-color: #f785bf;
+    border: 3px solid #a93e5e;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.livro-imagem1 img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #612335;
+}
+
+/* ---------- Caixa de texto alinhada ---------- */
+.resumo {
+    background-color: #ffffff;
+    border-left: 10px solid #947252;
+    border: 2px solid #947252;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    main section {
+        padding: 15px;
+    }
+
+    .linha-inicial1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .livro-imagem1,
+    .resumo {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 0.95em;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    main section {
+        width: 95%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    nav a {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+}
